@@ -192,6 +192,7 @@ false
 true
 
 var a =10 ;
+<<<<<<< HEAD
 undefined
 
 
@@ -212,3 +213,6 @@ do{
 	console.log(i);
 	i++;
 }while(i <=5);
+=======
+undefined
+>>>>>>> 8673c3bd1b21628c230cbd5106d0eede3915121a
