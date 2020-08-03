@@ -6,6 +6,38 @@
 	<h1 id="one">Heading-1</h1>
 	<h1 id="two">Heading-2</h1>
 
-	<p id="para">This is paragraph heading</p>
+	<p id="para" class="para">This is paragraph heading</p>
+	
+	<!-- first way -->
+	<button id="btn" onclick="alert('Hello')">Say Hello</button>
+
+	<!-- second - way -->
+	<button id="btn2">Say Hello - 02</button>
+	<script>
+		var helloButton = document.getElementById('btn2');
+
+		// addEventListener(eventname, eventhandler)
+		// multiple event listener can also be added to same button. 
+		helloButton.addEventListener('click', function(){
+			alert('Hello');
+		});
+	</script>
+
+	<!-- ClickCount -->
+	<button id="count" style="height: 100px;width: 100px;background-color: red;border: none"></button>
+	<p id="showcount">This button is clicked 1 times.</p>
+	
+	<script type="text/javascript">
+		var cnt =1;
+		var countbutton = document.getElementById('count');
+		countbutton.addEventListener('click',function(){
+			 var count = document.querySelector('#showcount')
+			 count.innerText= "This button is clicked " + cnt + " times.";
+			 cnt++;
+		});
+	</script>
+
+
+
 </body>
 </html>
