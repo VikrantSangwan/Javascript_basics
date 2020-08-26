@@ -6,11 +6,11 @@ document.head;
 
 document.body;
 
-window object; //complete window of the screen.
+window; //complete window of the screen.
 window.screen;//screen property
 
 document
-#document
+
 
 var heading = document.getElementById('one');
 undefined

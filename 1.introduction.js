@@ -8,7 +8,7 @@ a = true;
 
 
 
-Their are 6 primitive data values - 
+//Their are 6 primitive data values - 
 
 /*
 1. number
@@ -20,9 +20,9 @@ Their are 6 primitive data values -
 
 */
 
-non-primitve type = object.
+// non-primitve type = object.
 
-Null and Undefiend
+// Null and Undefiend
 
 /*
 
@@ -65,16 +65,16 @@ parseInt("1000");
 parseInt("aaaa")
 //output = NaN
 
-typeof() - function
+//typeof() - function
 
-typeof(a);
+//typeof(a);
 
 
 b = null;
 console.log(typeof(b));
 //object
 
-typeof(NaN) ---- //Number will be the output.
+typeof(NaN)  //Number will be the output.
 
 
 10 + 2 

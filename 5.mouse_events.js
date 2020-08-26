@@ -57,7 +57,11 @@ outerDiv.addEventListener('click', function(){
 
 //Strict Mode
 //Prefer to get a an error when you cannot specified some things.
-"use strict"; // way of using strict mode -- on top of the page
+
+"use strict"; 
+// way of using strict mode -- on top of the page for complete document or could be applied on particular function.
+
+
 
 
 

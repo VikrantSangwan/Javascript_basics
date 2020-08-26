@@ -1,0 +1,57 @@
+#main-body{
+    margin: 50px;
+    padding: 0px;
+    border: solid black 1px;
+    height: 400px;
+    width: 300px;
+    background-color: grey;
+}
+
+#output_screen{
+
+    font-family: 'Recursive', sans-serif;
+    position: relative;
+    /* border: solid 1px black; */
+    height: 100px;
+    margin: 10px;
+    font-size: 25px;
+    background-color: white;
+}
+.row{
+    display: flex;
+    margin: 10px;
+    height: 60px;
+    width: 280px;
+    /* border: solid black 1px; */
+}
+
+.button{
+
+    font-family: 'Recursive', sans-serif;
+    margin: 5px;
+    padding: 10px;
+    width: 25%;
+    font-size: 25px;
+    color: white;
+    background-color: #616161;
+    border: none;
+    /* border: solid black 1px; */
+    
+}
+#operator{
+    margin: 5px;
+    padding: 10px;
+    width: 25%;
+    font-size: 25px;
+    color: white;
+    background-color: #64B5F6;
+    border: none;
+    /* border: solid black 1px; */
+}
+#button_0{
+    width: 50%;
+}
+#result{
+    border: none;
+background-color:#E53935 ;
+}
