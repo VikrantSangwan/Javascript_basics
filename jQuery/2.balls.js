@@ -11,10 +11,10 @@ function addballs(){
 }
 
 function clearballs(){
-    $(' .row .one').css({
+    $(' .row .one').eq(count-1).css({
         display: "none"
     })
-    count = 0;
+    count--;
 }
 
 $('.one').click(function(){
