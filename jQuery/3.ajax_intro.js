@@ -1,37 +1,51 @@
 
 $('#fetchbutton').click(fetchRandomDogImage);
 
+
+//This is called a  Vanilla Javascript
  function fetchRandomDogImage(){
 
-        /*FIRST Method BASIC*/
-//     var xhrRequest = new XMLHttpRequest();
+    /*FIRST Method BASIC*/
 
-//     xhrRequest.open('get','https://dog.ceo/api/breeds/image/random');
-//     xhrRequest.send();
+    //creating object on which all operation will be performed
+    var xhrRequest = new XMLHttpRequest();
 
-//     xhrRequest.onload = function(){
-//         console.log(xhrRequest.response);
-//         var JSONresponse = JSON.parse(xhrRequest.response);
-//         var ImageUrl = JSONresponse.message;
+    xhrRequest.open('get','https://dog.ceo/api/breeds/image/random');
+    xhrRequest.send();
 
-//         $('#ImageOfdog').attr('src',ImageUrl);
-//     }
+    xhrRequest.onload = function(){
+        //console.log(xhrRequest.response);
+        
+        var JSONresponse = JSON.parse(xhrRequest.response);
+        var ImageUrl = JSONresponse.message;
+
+        $('#ImageOfdog').attr('src',ImageUrl);
+    }
+    xhrRequest.onerror = function(){
+        console.log("Request Failed");
+    }
+
 
     /*SECOND METHOD*/
-//        $.ajax({
-//         url: 'https://dog.ceo/api/breeds/image/random',
-//         method: 'GET',
-//         success : function(data){
-//             var ImageUrl = data.message;
-//             $('#ImageOfdog').attr('src',ImageUrl);
-//         }
-//     });
+    // $.ajax({
+    //     url: 'https://dog.ceo/api/breeds/image/',
+    //     method: 'GET',
+    //     success : function(data){
+    //         var ImageUrl = data.message;
+    //         $('#ImageOfdog').attr('src',ImageUrl);
+    //     },
+    // }).fail(function(){
+    //     console.log('error');
+    // });
 
 
-    /*THIRD METHOD*/
-    $.get('https://dog.ceo/api/breeds/image/random', function(data){
-        var ImageUrl = data.message;
-        $('#ImageOfdog').attr('src',ImageUrl);
-    })
+
+    // /*THIRD METHOD*/
+    // $.get('https://dog.ceo/api/breeds/image/', function(data){
+    //     var ImageUrl = data.message;
+    //     $('#ImageOfdog').attr('src',ImageUrl);
+    // }).fail(function(){
+    //     console.log("Request Failed");
+    // })
 
 }
