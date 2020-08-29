@@ -1,5 +1,5 @@
-function displayit(){
-
+function getnasaimage() {
+ 
     console.log('Button clicked')
 
     function displayImage(data) {
@@ -10,7 +10,17 @@ function displayit(){
                 height:'50%'
             }).appendTo('#image-container');
     
-     }
+    }
+
+    function getdate(){
+        var $j = jQuery.noConflict();
+        var mydatevar = $j("#datepicker").datepicker({
+            onSelect: function (selectedDate) {
+                alert(selectedDate);
+            }
+        });
+        return mydatevar;
+    }
     
     $.ajax({
         //basic url with api_key
@@ -24,7 +34,7 @@ function displayit(){
         //Instead of passing the query in url we can pass them here also
         data: {
             api_key : 'mNFl76H2hD6XK8Oajozi9gSfM15jdSpoDP8ezTpU',
-            date: '2019-02-13',
+            date: getdate(),
         }
     })
     
