@@ -46,3 +46,36 @@ promise.then( function (successMsg){
 }).catch( function(successMsg){
     console.log(successMsg);
 })
+
+//Changing of requests
+
+/*
+
+$.ajax({
+
+    success: function() {
+        $.ajax({
+            success: function() {
+                $.ajax({
+                    success: function(){
+                        $.ajax({
+                            .......
+                        })
+                    }
+                })
+            }
+        })
+    }
+})
+*/
+
+/*
+
+if any of the code is unsuccessful then it will jump to catch.
+promise1.then().then().then()....catch();
+
+
+checkUserLoggedIn().then(fetchuserfeed).then(fetchUserFriends).then(fetchUserMessages);
+
+
+*/
